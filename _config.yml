@@ -1,18 +1,17 @@
+--- #--------------------------
+
 # The Site Settings
 # v2.0
 # https://github.com/cotes2020/jekyll-theme-chirpy
 # © 2017-2019 Cotes Chung
 # MIT licensed
 
-
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
-#--------------------------
+title: տիգրան # the main title
 
-title: Chirpy                          # the main title
+tagline: դասական բլոգեր # it will display as the sub-title
 
-tagline: A text-focused Jekyll theme.  # it will display as the sub-title
-
-description: >-                        # used by seo meta and the atom feed
+description: >- # used by seo meta and the atom feed
   A minimal, portfolio, sidebar,
   bootstrap Jekyll theme with responsive web design
   and focuses on text presentation.
@@ -20,23 +19,23 @@ description: >-                        # used by seo meta and the atom feed
 # Replace with the website url, e.g. 'https://username.github.io'
 url: 'protocol://domain'
 
-author: your_full_name                  # change to your full name
+author: Տիգրան # change to your full name
 
-avatar: /assets/img/sample/avatar.jpg   # support internet resources
+avatar: '' # support internet resources
 
 github:
-  username: github_username             # change to your github username
+  username: tigransimonyan # change to your github username
 
 twitter:
-  username: twitter_username            # change to your twitter username
+  username: _tigransimonyan # change to your twitter username
 
 social:
-  name: your_full_name                  # it will shows as the copyright owner in Footer
-  email: example@doamin.com             # change to your email address
+  name: տիգրան # it will shows as the copyright owner in Footer
+  email: '' # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://twitter.com/username      # change to your twitter homepage
-    - https://github.com/username       # change to your github homepage
+    - https://twitter.com/_tigransimonyan # change to your twitter homepage
+    - https://github.com/tigransimonyan # change to your github homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
     # - https://www.linkedin.com/in/username
@@ -49,7 +48,7 @@ google_site_verification: google_meta_tag_verification # change to your verifica
 baseurl: ''
 
 # Change to your timezone › http://www.timezoneconverter.com/cgi-bin/findzone/findzone
-timezone: Asia/Shanghai
+timezone: Asia/Yerevan
 
 google_analytics:
   # Fill with your Google Analytics ID
@@ -62,12 +61,11 @@ google_analytics:
     # the next options only valid when `google_analytics.pv` is enabled.
     proxy_url: ''
     proxy_endpoint: ''
-    cache: false  # pv data local cache, good for the users from GFW area.
+    cache: false # pv data local cache, good for the users from GFW area.
 
 disqus:
-  comments: false  # boolean type, the global switch for posts comments.
-  shortname: ''    # Fill with your Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
-
+  comments: false # boolean type, the global switch for posts comments.
+  shortname: '' # Fill with your Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
 
 # Prefer color scheme setting, available values:
 #
@@ -78,7 +76,7 @@ disqus:
 #
 #     dark   - Use the dark color scheme
 #
-theme_mode: dual
+theme_mode: dark
 
 # boolean type, global switch for ToC in posts.
 toc: true
@@ -104,61 +102,49 @@ kramdown:
 permalink: /posts/:title/
 
 defaults:
-  -
-    scope:
-      path: ""          # An empty string here means all files in the project
+  - scope:
+      path: '' # An empty string here means all files in the project
       type: posts
     values:
       layout: post
-      comments: true    # Enable comments in posts.
-      toc: true         # Display TOC column in posts.
+      comments: true # Enable comments in posts.
+      toc: true # Display TOC column in posts.
       location: Post
       breadcrumb:
-        -
-          label: Posts
+        - label: Գրառումներ
           url: /
-  -
-    scope:
+  - scope:
       path: _drafts
     values:
       comments: false
-  -
-    scope:
+  - scope:
       path: tags
     values:
       tab_active: Tags
-      location: Tag
+      location: Tags
       breadcrumb:
-        -
-          label: Home
+        - label: Գլխաւոր
           url: /
-        -
-          label: Tags
+        - label: Պիտակներ
           url: /tabs/tags/
-  -
-    scope:
+  - scope:
       path: categories
     values:
       tab_active: Categories
-      location: Category
+      location: Categories
       breadcrumb:
-        -
-          label: Home
+        - label: Գլխաւոր
           url: /
-        -
-          label: Categories
+        - label: Բաժիններ
           url: /tabs/categories/
-  -
-    scope:
+  - scope:
       path: tabs
     values:
       layout: page
-      dynamic_title: true    # Hide title in mobile screens.
+      dynamic_title: true # Hide title in mobile screens.
       breadcrumb:
-        -
-          label: Home
+        - label: Գլխաւոր
           url: /
-
 
 sass:
   sass_dir: /assets/css
@@ -166,24 +152,40 @@ sass:
 
 compress_html:
   clippings: all
-  comments: ["<!-- ", " -->"]
-  endings: [html, head, body, dt, dd, rt, rp,
-            optgroup, option, colgroup, caption,
-            thead, tbody, tfoot, tr, td, th]
+  comments: ['<!-- ', ' -->']
+  endings:
+    [
+      html,
+      head,
+      body,
+      dt,
+      dd,
+      rt,
+      rp,
+      optgroup,
+      option,
+      colgroup,
+      caption,
+      thead,
+      tbody,
+      tfoot,
+      tr,
+      td,
+      th,
+    ]
   profile: false
   blanklines: false
   ignore:
     envs: []
 
 exclude:
-  - vendor        # Avoid Jekyll mistakenly read the vendor directory on Travis-CI's VM .
+  - vendor # Avoid Jekyll mistakenly read the vendor directory on Travis-CI's VM .
   - Gemfile.lock
   - Gemfile
   - tools
-  - docs
   - README.md
 
-sitemap_exclude:  # Sitemap will exclude the following items.
+sitemap_exclude: # Sitemap will exclude the following items.
   fuzzy:
     - /assets/
   accurate:

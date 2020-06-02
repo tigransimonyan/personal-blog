@@ -4,16 +4,15 @@
 # © 2017-2019 Cotes Chung
 # MIT Licensed
 
-
 panel:
-  lastmod: "Recent Update"
-  trending_tags: "Trending Tags"
-  toc: "Contents"
+  lastmod: 'Վերջին թարմացումները'
+  trending_tags: 'Պիտակներ'
+  toc: 'Բովանդակութիւն'
 
 post:
-  relate_posts: "Further Reading"
+  relate_posts: 'Կարդացէք նաեւ'
   button:
-    next: Newer
-    previous: Older
+    next: Յաջորդ
+    previous: Նախորդ
 
-search_hint: "Search"   # text show on search bar
+search_hint: 'Որոնել' # text show on search bar

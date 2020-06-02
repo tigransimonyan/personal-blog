@@ -1,6 +1,5 @@
 ---
-title: Categories
-
+title: Բաժիններ
 # All the Categories of posts
 # v2.0
 # https://github.com/cotes2020/jekyll-theme-chirpy
@@ -11,12 +10,12 @@ title: Categories
 {% assign sort_categories = site.categories | sort %}
 
 {% for category in sort_categories %}
-  {% assign category_name = category | first %}
-  {% assign posts_of_category = category | last %}
-  {% assign first_post = posts_of_category | first %}
+{% assign category_name = category | first %}
+{% assign posts_of_category = category | last %}
+{% assign first_post = posts_of_category | first %}
 
-  {% if category_name == first_post.categories[0] %}
-    {% assign sub_categories = "" | split: "" %}
+{% if category_name == first_post.categories[0] %}
+{% assign sub_categories = "" | split: "" %}
 
     {% for post in posts_of_category %}
       {% assign second_category = post.categories[1] %}
@@ -85,5 +84,5 @@ title: Categories
 
   </div> <!-- .card -->
 
-  {% endif %}
+{% endif %}
 {% endfor %}

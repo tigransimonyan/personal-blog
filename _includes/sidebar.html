@@ -8,6 +8,7 @@
 
 <div id="nav-wrapper">
   <div id="profile-wrapper" class="d-flex flex-column">
+    {%if site.avatar != '' %}
     <div id="avatar" class="d-flex justify-content-center">
       <a href="{{ site.baseurl }}/" alt="avatar">
         {% assign avatar_url = site.avatar %}
@@ -18,12 +19,14 @@
         <img src="{{ avatar_url }}" alt="avatar" onerror="this.style.display='none'">
       </a>
     </div>
-
+    {% endif %}
     <div class="profile-text mt-3">
       <div class="site-title">
         <a href="{{ '/' | relative_url }}">{{- site.title -}}</a>
       </div>
+      {%if site.tagline != '' %}
       <div class="site-subtitle font-italic">{{- site.tagline -}}</div>
+      {% endif %}
     </div>
   </div>
 
@@ -71,8 +74,7 @@
       {%- elsif entry.type == 'twitter' -%}
         https://twitter.com/{{ site.twitter.username }}
       {%- elsif entry.type == 'email' -%}
-        {% assign email = site.social.email | split: '@' %}
-        javascript:window.open('mailto:' + ['{{ email[0] }}','{{ email[1] }}'].join('@'))
+        mailto:{{site.social.email}}
       {%- elsif entry.type == 'rss' -%}
         {{ "/feed.xml" | relative_url }}
       {%- else -%}

@@ -11,7 +11,8 @@ This Jekyll template totally compatible with Markdown syntax. Now, let's take a 
 
 ## Titles
 
-***
+---
+
 # H1
 
 <h2 data-toc-skip>H2</h2>
@@ -20,7 +21,7 @@ This Jekyll template totally compatible with Markdown syntax. Now, let's take a 
 
 #### H4
 
-***
+---
 
 ## Paragraph
 
@@ -42,26 +43,23 @@ Fluttering and dancing in the breeze.
 
 ## Tables
 
-|Company|Contact|Country|
-|:---|:--|---:|
-|Alfreds Futterkiste | Maria Anders | Germany
-|Island Trading | Helen Bennett | UK
-|Magazzini Alimentari Riuniti | Giovanni Rovelli | Italy
+| Company                      | Contact          | Country |
+| :--------------------------- | :--------------- | ------: |
+| Alfreds Futterkiste          | Maria Anders     | Germany |
+| Island Trading               | Helen Bennett    |      UK |
+| Magazzini Alimentari Riuniti | Giovanni Rovelli |   Italy |
 
 ## Link
 
 <http://127.0.0.1:4000>
 
-
 ## Footnote
 
 Click the hook will locate the footnote[^footnote].
 
-
 ## Image
 
 ![Desktop View]({{ "/assets/img/sample/mockup.png" | relative_url }})
-
 
 ## Inline code
 
@@ -94,7 +92,6 @@ $ date
 Sun Nov  3 15:11:12 CST 2019
 ```
 
-
 #### Terminal
 
 ```terminal
@@ -124,11 +121,13 @@ fi;
 #### Liquid
 
 {% raw %}
+
 ```liquid
 {% if product.title contains 'Pack' %}
   This product's title contains the word Pack.
 {% endif %}
 ```
+
 {% endraw %}
 
 #### HTML
@@ -136,7 +135,8 @@ fi;
 ```html
 <div class="sidenav">
   <a href="#contact">Contact</a>
-  <button class="dropdown-btn">Dropdown
+  <button class="dropdown-btn">
+    Dropdown
     <i class="fa fa-caret-down"></i>
   </button>
   <div class="dropdown-container">
@@ -161,7 +161,6 @@ fi;
   </div>
 </div>
 ```
-
 
 ## Reverse Footnote
 
