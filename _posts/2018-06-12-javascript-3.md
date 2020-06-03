@@ -1,7 +1,7 @@
 ---
 title: JavaScript - Տվյալների տիպերը
 categories: [Տեխնիկական, JavaScript]
-tags: [javascript, ծրագրավորում]
+tags: [ջաւասկրիպտ, ծրագրավորում]
 math: false
 ---
 

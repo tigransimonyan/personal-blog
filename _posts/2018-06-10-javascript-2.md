@@ -1,7 +1,7 @@
 ---
 title: JavaScript - Փոփոխականներ եւ Հաստատուններ
 categories: [Տեխնիկական, JavaScript]
-tags: [javascript, ծրագրավորում]
+tags: [ջաւասկրիպտ, ծրագրավորում]
 math: false
 ---
 

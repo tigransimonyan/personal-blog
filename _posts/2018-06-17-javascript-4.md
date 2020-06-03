@@ -1,7 +1,7 @@
 ---
 title: JavaScript - Oպերատորներ։ Թվաբանական օպերատորներ
 categories: [Տեխնիկական, JavaScript]
-tags: [javascript, ծրագրավորում]
+tags: [ջաւասկրիպտ, ծրագրավորում]
 math: false
 ---
 

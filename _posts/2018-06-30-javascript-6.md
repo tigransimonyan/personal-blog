@@ -1,7 +1,7 @@
 ---
 title: JavaScript - Պայմանի օպերատոր
 categories: [Տեխնիկական, JavaScript]
-tags: [javascript, ծրագրավորում]
+tags: [ջաւասկրիպտ, ծրագրավորում]
 math: false
 ---
 
