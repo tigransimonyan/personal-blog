@@ -1,7 +1,7 @@
 ---
 title: JavaScript - Հարաբերման օպերատորներ
 categories: [Տեխնիկական, JavaScript]
-tags: [ջաւասկրիպտ, ծրագրավորում]
+tags: [ջաւասկրիպտ, ծրագրաւորում]
 math: false
 ---
 
