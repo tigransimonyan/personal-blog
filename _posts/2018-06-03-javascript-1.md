@@ -1,7 +1,7 @@
 ---
 title: JavaScript - Ներածություն
 categories: [Տեխնիկական, JavaScript]
-tags: [javascript]
+tags: [javascript, ծրագրավորում]
 math: false
 ---
 
