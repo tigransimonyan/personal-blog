@@ -1,7 +1,7 @@
 ---
 title: Ինչ դիտել այսօր
-categories: [Հասարակական, Կինո]
-tags: [կինո]
+categories: [Հասարակական, Նայելիք]
+tags: [նայելիք]
 math: false
 ---
 
