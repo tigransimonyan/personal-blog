@@ -1,5 +1,5 @@
 ---
-title: Ի՞նչ նայել այսօր
+title: Ինչ դիտել այսօր
 categories: [Հասարակական, Կինո]
 tags: [կինո]
 math: false
