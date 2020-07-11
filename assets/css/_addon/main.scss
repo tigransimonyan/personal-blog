@@ -850,6 +850,18 @@ table {
   }
 }
 
+.gallery{
+  margin: 0 -12px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  img{
+    flex-basis: 33.33%;
+    object-fit: cover;
+    padding: 0 12px;
+  }
+}
+
 /* --- buttons --- */
 .btn-lang {
   border: 1px solid !important;
