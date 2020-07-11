@@ -747,6 +747,19 @@ a {
       @extend %link-hover;
     }
   }
+  .gallery{
+    margin: 0 -12px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    img{
+      flex-basis: 33.33%;
+      max-width: 33.33%;
+      object-fit: cover;
+      padding: 0 12px;
+    }
+  }
 }
 
 
@@ -850,17 +863,7 @@ table {
   }
 }
 
-.gallery{
-  margin: 0 -12px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  img{
-    flex-basis: 33.33%;
-    object-fit: cover;
-    padding: 0 12px;
-  }
-}
+
 
 /* --- buttons --- */
 .btn-lang {
