@@ -43,10 +43,10 @@ math: false
 
 Այբուբենում բացակայում են՝ «է», «օ» տառերը։ Դա ամենայն հաւանականութեամբ կապուած է տուել ժամանակաշրջանում հայերէնի ուղղագրութեան հետ, երբ «է»-ի փոխարէն գրուում էր «ե» իսկ «ե»-ի փոխարէն՝ «յե»։
 
-———
+---
 
 <div class="gallery">
-<img src=""/>
-<img src=""/>
-<img src=""/>
+<img src="/uploads/morse-code-1.png"/>
+<img src="/uploads/morse-code-2.png"/>
+<img src="/uploads/morse-code-3.png"/>
 </div>
