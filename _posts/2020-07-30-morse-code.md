@@ -46,7 +46,7 @@ math: false
 ---
 
 <div class="gallery">
-<img src="/uploads/morse-code-1.png"/>
-<img src="/uploads/morse-code-2.png"/>
-<img src="/uploads/morse-code-3.png"/>
+	<img src="/uploads/morse-code-1.png"/>
+	<img src="/uploads/morse-code-2.png"/>
+	<img src="/uploads/morse-code-3.png"/>
 </div>
