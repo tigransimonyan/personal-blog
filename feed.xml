@@ -1,36 +1,33 @@
 ---
-layout: compress
+layout: null
 ---
 
-{% capture source %}
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-<channel>
-  <title>{{ site.title }}</title>
-  <description>{{ site.description }}</description>
-  <link>{{ site.url }}/</link>
-  <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
-  <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
-  <generator>Jekyll v{{ jekyll.version }}</generator>
-  <language>hy</language>
-  <atom:link href="{{ site.url }}/feed.xml" rel="self" type="application/rss+xml"/>
-  <copyright> © {{ 'now' | date: '%Y' }} {{ site.author }} </copyright>
-  {% for post in site.posts limit: 10 %}
-    {% assign post_absolute_url = site.url | append: post.url | url_decode %}
-    <item>
-      <title>{{ post.title | xml_escape}}</title>
-      <link>{{ post_absolute_url }}</link>
-      <description>{{ post.content | xml_escape }}</description>
-      <pubDate>{{ post.date | date_to_xmlschema }}</pubDate>
-      <guid isPermaLink="true">{{ post_absolute_url }}</guid>
-      {% if post.categories %}
-        {% for category in post.categories %}
-        <category term="{{ category | xml_escape }}" />
-        {% endfor %}
-      {% endif %}
-    </item>
-  {% endfor %}
-</channel>
+  <channel>
+    <title>{{ site.title }}</title>
+    <description>{{ site.description }}</description>
+    <link>{{ site.url }}/</link>
+    <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
+    <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
+    <generator>Jekyll v{{ jekyll.version }}</generator>
+    <language>hy</language>
+    <atom:link href="{{ site.url }}/feed.xml" rel="self" type="application/rss+xml"/>
+    <copyright> © {{ 'now' | date: '%Y' }} {{ site.author }} </copyright>
+    {% for post in site.posts limit: 10 %}
+      {% assign post_absolute_url = site.url | append: post.url | url_decode %}
+      <item>
+        <title>{{ post.title | xml_escape}}</title>
+        <link>{{ post_absolute_url }}</link>
+        <description>{{ post.content | xml_escape }}</description>
+        <pubDate>{{ post.date | date_to_xmlschema }}</pubDate>
+        <guid isPermaLink="true">{{ post_absolute_url }}</guid>
+        {% if post.categories %}
+          {% for category in post.categories %}
+          <category term="{{ category | xml_escape }}" />
+          {% endfor %}
+        {% endif %}
+      </item>
+    {% endfor %}
+  </channel>
 </rss>
-{% endcapture %}
-{{ source | replace: '&', '&amp;' }}
