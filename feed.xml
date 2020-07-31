@@ -3,56 +3,37 @@ layout: compress
 ---
 
 {% capture source %}
-<feed xmlns="http://www.w3.org/2005/Atom">
-  <id>{{ site.url }}</id>
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
   <title>{{ site.title }}</title>
-  <subtitle>{{ site.description }}</subtitle>
-  <updated>{{ site.time | date_to_xmlschema }}</updated>
+  <description>{{ site.description }}</description>
+  <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
+  <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
   <author>
     <name>{{ site.author }}</name>
     <uri>{{ site.url }}</uri>
   </author>
-  <link href="/feed.xml" rel="self" type="application/atom+xml" />
-  <link href="{{ site.url }}" rel="alternate" type="text/html" />
-  <generator uri="https://jekyllrb.com/" version="{{ jekyll.version }}">Jekyll</generator>
-  <rights> © {{ 'now' | date: '%Y' }} {{ site.author }} </rights>
-  <icon>{{ site.baseurl }}/assets/img/favicons/favicon.ico</icon>
-  <logo>{{ site.baseurl }}/assets/img/favicons/favicon-96x96.png</logo>
-
-{% for post in site.posts limit: 5 %}
-  {% assign post_absolute_url = site.url | append: post.url %}
-  <entry>
-    <title>{{ post.title }}</title>
-    <link href="{{ post_absolute_url }}" rel="alternate" type="text/html" title="{{ post.title }}" />
-    <published>{{ post.date | date_to_xmlschema }}</published>
-  {% if post.seo.date_modified %}
-    <updated>{{ post.seo.date_modified | date_to_xmlschema }}</updated>
-  {% else %}
-    <updated>{{ site.time | date_to_xmlschema }}</updated>
-  {% endif %}
-    <id>{{ post_absolute_url }}</id>
-    <content src="{{ post_absolute_url }}" />
-    <author>
-      <name>{{ site.author }}</name>
-    </author>
-
-  {% if post.categories %}
-    {% for category in post.categories %}
-    <category term="{{ category }}" />
-    {% endfor %}
-  {% endif %}
-
-  {% if post.summary %}
-    <summary>{{ post.summary | strip }}</summary>
-  {% else %}
-    <summary>
-      {% assign content = post.content %}
-      {% include no-linenos.html %}
-      {{ content | strip_html | truncate: 200 }}</summary>
-  {% endif %}
-
-  </entry>
-{% endfor %}
-</feed>
+  <language>hy</language>
+  <link>{{ site.url }}/</link>
+  <generator>Jekyll v{{ jekyll.version }}</generator>
+  <copyright> © {{ 'now' | date: '%Y' }} {{ site.author }} </copyright>
+  {% for post in site.posts limit: 10 %}
+    {% assign post_absolute_url = site.url | append: post.url | url_decode %}
+    <item>
+      <title>{{ post.title | xml_escape}}</title>
+      <link>{{ post_absolute_url }}</link>
+      <description>{{ post.content | xml_escape }}</description>
+      <pubDate>{{ post.date | date_to_xmlschema }}</pubDate>
+      <guid isPermaLink="true">{{ post_absolute_url }}</guid>
+      {% if post.categories %}
+        {% for category in post.categories %}
+        <category term="{{ category }}" />
+        {% endfor %}
+      {% endif %}
+    </item>
+  {% endfor %}
+</channel>
+</rss>
 {% endcapture %}
 {{ source | replace: '&', '&amp;' }}

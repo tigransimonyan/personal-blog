@@ -7,14 +7,11 @@
 # MIT licensed
 
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
-title: տիգրան # the main title
+title: տիգրան
 
-tagline: առցանց տուն # it will display as the sub-title
+tagline: առցանց տուն
 
-description: >- # used by seo meta and the atom feed
-  A minimal, portfolio, sidebar,
-  bootstrap Jekyll theme with responsive web design
-  and focuses on text presentation.
+description: անձնական բլոգ
 
 # Replace with the website url, e.g. 'https://username.github.io'
 url: 'https://tigransimonyan.com'
