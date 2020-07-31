@@ -8,15 +8,12 @@ layout: compress
 <channel>
   <title>{{ site.title }}</title>
   <description>{{ site.description }}</description>
+  <link>{{ site.url }}/</link>
   <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
   <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
-  <author>
-    <name>{{ site.author }}</name>
-    <uri>{{ site.url }}</uri>
-  </author>
-  <language>hy</language>
-  <link>{{ site.url }}/</link>
   <generator>Jekyll v{{ jekyll.version }}</generator>
+  <language>hy</language>
+  <atom:link href="{{ site.url }}/feed.xml" rel="self" type="application/rss+xml"/>
   <copyright> © {{ 'now' | date: '%Y' }} {{ site.author }} </copyright>
   {% for post in site.posts limit: 10 %}
     {% assign post_absolute_url = site.url | append: post.url | url_decode %}
@@ -28,7 +25,7 @@ layout: compress
       <guid isPermaLink="true">{{ post_absolute_url }}</guid>
       {% if post.categories %}
         {% for category in post.categories %}
-        <category term="{{ category }}" />
+        <category term="{{ category | xml_escape }}" />
         {% endfor %}
       {% endif %}
     </item>
