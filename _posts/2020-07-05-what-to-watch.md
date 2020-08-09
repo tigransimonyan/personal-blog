@@ -14,8 +14,9 @@ math: false
 - The Majestic - 2001
 - Man on the Moon - 1999
 - Bruce Almighty - 2003
-- Mr. Popper's Penguins - 2011
 - The Great Gatsby - 2013
+- Pulp Fiction - 1994
+- Mr. Popper's Penguins - 2011
 
 ## Սերիալներ
 
