@@ -1,5 +1,5 @@
 ---
-title: Նայելիքներ
+title: Նայելիք
 categories: [Հասարակական, Նայելիք]
 tags: [նայելիք]
 math: false
