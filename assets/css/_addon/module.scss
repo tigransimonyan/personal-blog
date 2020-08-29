@@ -15,12 +15,12 @@
 }
 
 %table-cell {
-  padding: .35rem .8rem;
+  padding: 0.35rem 0.8rem;
   font-size: 95%;
 }
 
 %link-hover {
-  color: #d2603a!important;
+  color: #d2603a !important;
   border-bottom: 1px solid #d2603a;
   text-decoration: none;
 }
@@ -39,7 +39,7 @@
 
 %heading {
   font-weight: 400;
-  font-family: 'Lato', 'Microsoft Yahei', sans-serif;
+  font-family: 'Arm', sans-serif;
 }
 
 %section {
@@ -64,7 +64,7 @@
   color: $color;
   transition: color 0.35s ease-in-out;
   user-select: none;
-  margin: 0 .25rem;
+  margin: 0 0.25rem;
 }
 
 @mixin icon-round($diameter) {
@@ -96,5 +96,5 @@
   color: $color;
   font-size: $font-size;
   font-weight: $font-weight;
-  font-family: 'Roboto Condensed', 'Microsoft Yahei', sans-serif;
+  font-family: 'Arm', sans-serif;
 }

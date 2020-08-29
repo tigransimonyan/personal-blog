@@ -45,10 +45,10 @@ title: Բաժիններ
         <span class="text-muted small font-weight-light">
         {% if sub_categories_size > 0 %}
           {{ sub_categories_size }}
-          {% if sub_categories_size > 1 %}categories{% else %}category{% endif %},
+          ենթախումբ
         {% endif %}
           {{ top_posts_size }}
-          post{% if top_posts_size > 1 %}s{% endif %}
+          գրառում
         </span>
       </span>
 
@@ -74,7 +74,7 @@ title: Բաժիններ
             class="ml-1 mr-2">{{ sub_category }}</a>
           {% assign posts_size = site.categories[sub_category] | size %}
           <span class="text-muted small font-weight-light">{{ posts_size }}
-            post{% if posts_size > 1 %}s{% endif %}
+            գրառում
           </span>
         </li>
         {% endfor %}
