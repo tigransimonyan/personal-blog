@@ -4,25 +4,22 @@
 #  © 2020 Cotes Chung
 #  MIT Licensed
 
--
-  type: github
+- type: vsco
+  icon: 'fas fa-image'
+  url: 'https://vsco.co/tigransimonyan'
+- type: github
   icon: 'fab fa-github-alt'
--
-  type: twitter
+  url: 'https://github.com/tigransimonyan'
+- type: twitter
   icon: 'fab fa-twitter'
--
-  type: email
+  url: ''
+- type: email
   icon: 'fas fa-envelope'
-  noblank: true            # open link in current tab
--
-  type: rss
+  noblank: true # open link in current tab
+- type: rss
   icon: 'fas fa-rss'
   noblank: true
-
-# Complete the url below to enable more contact options
--
-  icon: 'fab fa-linkedin'   # icons powered by <https://fontawesome.com/>
-  url:  ''                  # Fill with your Linkedin homepage
--
-  icon: 'fab fa-stack-overflow'
-  url:  ''                  # Fill with your stackoverflow homepage
+- icon: 'fab fa-linkedin' # icons powered by <https://fontawesome.com/>
+  url: '' # Fill with your Linkedin homepage
+- icon: 'fab fa-stack-overflow'
+  url: '' # Fill with your stackoverflow homepage

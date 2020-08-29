@@ -69,12 +69,8 @@
 
   {% for entry in site.data.contact %}
     {% capture url %}
-      {%- if entry.type == 'github' -%}
-        https://github.com/{{ site.github.username }}
-      {%- elsif entry.type == 'twitter' -%}
-        https://twitter.com/{{ site.twitter.username }}
-      {%- elsif entry.type == 'email' -%}
-        mailto:{{site.social.email}}
+      {%- if entry.type == 'email' -%}
+        mailto:{{site.email}}
       {%- elsif entry.type == 'rss' -%}
         {{ "/feed.xml" | relative_url }}
       {%- else -%}

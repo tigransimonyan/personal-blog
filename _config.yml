@@ -15,27 +15,9 @@ description: անձնական բլոգ
 
 # Replace with the website url, e.g. 'https://username.github.io'
 url: 'https://tigransimonyan.com'
-
 author: տիգրան # change to your full name
-
 avatar: '' # support internet resources
-
-github:
-  username: tigransimonyan # change to your github username
-
-twitter:
-  username: _tigransimonyan # change to your twitter username
-
-social:
-  name: տիգրան # it will shows as the copyright owner in Footer
-  email: '' # change to your email address
-  links:
-    # The first element serves as the copyright owner's link
-    - https://twitter.com/_tigransimonyan # change to your twitter homepage
-    - https://github.com/tigransimonyan # change to your github homepage
-    # Uncomment below to add more social links
-    # - https://www.facebook.com/username
-    # - https://www.linkedin.com/in/username
+email: 'info@tigransimonyan.com' # change to your email address
 
 google_site_verification: google_meta_tag_verification # change to your verification string
 
