@@ -1,6 +1,6 @@
 ---
 title: Նայելիք
-categories: [Հասարակական, Նայելիք]
+categories: [Հասարակական, Խառը]
 tags: [նայելիք]
 math: false
 ---
