@@ -34,13 +34,6 @@ layout: page
       </span>
       <i class="fa fa-tag fa-fw"></i>
       <span>{{post.tags | join: ", "}}</span>
-      <!-- page views -->
-      {% if site.google_analytics.pv.enabled %}
-      <i class="far fa-eye fa-fw"></i>
-      <span id="pv_{{-post.title-}}" class="pageviews">
-        <i class="fas fa-spinner fa-spin fa-fw"></i>
-      </span>
-      {% endif %}
     </div>
   </div>
   <!-- .post-review -->
