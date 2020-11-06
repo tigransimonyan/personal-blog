@@ -1,25 +1,13 @@
 --- #--------------------------
 
-# The Site Settings
-# v2.0
-# https://github.com/cotes2020/jekyll-theme-chirpy
-# © 2017-2019 Cotes Chung
-# MIT licensed
-
-# jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 title: տիգրան
-
 tagline: առցանց տուն
-
 description: անձնական բլոգ
 
-# Replace with the website url, e.g. 'https://username.github.io'
 url: 'https://tigransimonyan.com'
 author: տիգրան # change to your full name
 avatar: '' # support internet resources
 email: 'info@tigransimonyan.com' # change to your email address
-
-google_site_verification: google_meta_tag_verification # change to your verification string
 
 #--------------------------
 
@@ -28,10 +16,6 @@ baseurl: ''
 
 # Change to your timezone › http://www.timezoneconverter.com/cgi-bin/findzone/findzone
 timezone: Asia/Yerevan
-
-disqus:
-  comments: false # boolean type, the global switch for posts comments.
-  shortname: 'tigransimonyan' # Fill with your Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
 
 # Prefer color scheme setting, available values:
 #
