@@ -2,4 +2,4 @@
 title: Մասին
 ---
 
-Ասում են, թե լաւատես եմ։
+![Avatar](/uploads/avatar.svg)
