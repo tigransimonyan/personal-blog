@@ -42,7 +42,7 @@ $(function () {
       return minute + ' րոպէ' + ' առաջ';
     }
 
-    return (isLastmod ? 'just' : 'Ուղիղ') + ' now';
+    return (isLastmod ? 'քիչ' : 'քիչ') + ' առաջ';
   }
 
   function updateTimeago() {
