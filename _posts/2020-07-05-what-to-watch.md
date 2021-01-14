@@ -9,14 +9,15 @@ math: false
 
 - Youth - 2015
 - The Truman Show - 1998
-- Scent of a Woman - 1992
 - Amélie - 2001
-- The Majestic - 2001
-- Man on the Moon - 1999
-- Bruce Almighty - 2003
 - The Great Gatsby - 2013
 - Pulp Fiction - 1994
-- Mr. Popper's Penguins - 2011
+- Rose Island - 2020
+- Trainspotting - 1996
+- The Majestic - 2001
+- Man on the Moon - 1999
+- Scent of a Woman - 1992
+- Bruce Almighty - 2003
 
 ## Սերիալներ
 
