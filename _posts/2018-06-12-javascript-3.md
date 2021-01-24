@@ -1,5 +1,5 @@
 ---
-title: JavaScript - Տվյալների տիպերը
+title: JavaScript - 3. Տվյալների տիպերը
 categories: [Տեխնիկական, JavaScript]
 tags: [ջաւասկրիպտ, ծրագրաւորում]
 math: false

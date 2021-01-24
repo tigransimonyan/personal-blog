@@ -1,5 +1,5 @@
 ---
-title: JavaScript - Ներածություն
+title: JavaScript - 1. Ներածություն
 categories: [Տեխնիկական, JavaScript]
 tags: [ջաւասկրիպտ, ծրագրաւորում]
 math: false

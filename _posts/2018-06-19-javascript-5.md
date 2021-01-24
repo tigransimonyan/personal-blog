@@ -1,5 +1,5 @@
 ---
-title: JavaScript - Հարաբերման օպերատորներ
+title: JavaScript - 5. Հարաբերման օպերատորներ
 categories: [Տեխնիկական, JavaScript]
 tags: [ջաւասկրիպտ, ծրագրաւորում]
 math: false

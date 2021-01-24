@@ -1,5 +1,5 @@
 ---
-title: JavaScript - Oպերատորներ։ Թվաբանական օպերատորներ
+title: JavaScript - 4. Oպերատորներ
 categories: [Տեխնիկական, JavaScript]
 tags: [ջաւասկրիպտ, ծրագրաւորում]
 math: false

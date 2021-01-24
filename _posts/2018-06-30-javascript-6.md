@@ -1,5 +1,5 @@
 ---
-title: JavaScript - Պայմանի օպերատոր
+title: JavaScript - 6. Պայմանի օպերատոր
 categories: [Տեխնիկական, JavaScript]
 tags: [ջաւասկրիպտ, ծրագրաւորում]
 math: false

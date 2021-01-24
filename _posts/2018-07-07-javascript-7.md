@@ -1,5 +1,5 @@
 ---
-title: JavaScript - Տրամաբանական օպերատորներ
+title: JavaScript - 7. Տրամաբանական օպերատորներ
 categories: [Տեխնիկական, JavaScript]
 tags: [ջաւասկրիպտ, ծրագրաւորում]
 math: false

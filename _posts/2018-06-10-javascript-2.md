@@ -1,5 +1,5 @@
 ---
-title: JavaScript - Փոփոխականներ եւ Հաստատուններ
+title: JavaScript - 2. Փոփոխականներ եւ Հաստատուններ
 categories: [Տեխնիկական, JavaScript]
 tags: [ջաւասկրիպտ, ծրագրաւորում]
 math: false
