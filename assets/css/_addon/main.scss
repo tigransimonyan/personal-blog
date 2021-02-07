@@ -744,17 +744,18 @@ a {
       @extend %link-hover;
     }
   }
-  .gallery{
+  #gallery {
     margin: 0 -12px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: flex-start;
-    img{
+    img {
       flex-basis: 33.33%;
       max-width: 33.33%;
       object-fit: cover;
       padding: 0 12px;
+      cursor: zoom-in;
     }
   }
 }
