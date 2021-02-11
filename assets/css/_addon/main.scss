@@ -745,7 +745,7 @@ a {
     }
   }
   #gallery {
-    margin: 0 -12px;
+    margin: 0 -4px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -754,8 +754,10 @@ a {
       flex-basis: 33.33%;
       max-width: 33.33%;
       object-fit: cover;
-      padding: 0 12px;
+      padding: 0 4px;
       cursor: zoom-in;
+      margin-top: 0px;
+      margin-bottom: 8px;
     }
   }
 }
