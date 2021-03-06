@@ -14,6 +14,7 @@ math: false
 - Pulp Fiction - 1994
 - Rose Island - 2020
 - Trainspotting - 1996
+- Shutter Island - 2010
 - The Majestic - 2001
 - Man on the Moon - 1999
 - Scent of a Woman - 1992
