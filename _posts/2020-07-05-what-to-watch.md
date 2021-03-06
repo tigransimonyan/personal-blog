@@ -17,6 +17,7 @@ math: false
 - Shutter Island - 2010
 - The Majestic - 2001
 - Man on the Moon - 1999
+- A Beautiful Mind - 2001
 - Scent of a Woman - 1992
 - Bruce Almighty - 2003
 
