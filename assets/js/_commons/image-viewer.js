@@ -1,7 +1,9 @@
 $(function () {
   var elem = document.getElementById('gallery');
-  new Viewer(elem, {
-    movable: false,
-    transition: false,
-  });
+  if (elem && Viewer) {
+    new Viewer(elem, {
+      movable: false,
+      transition: false,
+    });
+  }
 });
