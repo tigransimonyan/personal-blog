@@ -14,7 +14,7 @@ math: false
 Ահա մէկ ամիս առաջ Smena 8M խցիկով եւ Ilford Pan 400 ժապաւէնով նկարածս նկարներից մի քանիսը՝
 
 <div id="gallery">
-	<img src="/uploads/film-bw-2.jpg" alt="Լողափ"/>
-	<img src="/uploads/film-bw-4.jpg" alt="Վերյուշ"/>
-	<img src="/uploads/film-bw-5.jpg" alt="Լքուած տուն"/>
+	<img src="/uploads/gallery/film-bw-2.jpg" alt="Լողափ"/>
+	<img src="/uploads/gallery/film-bw-4.jpg" alt="Վերյուշ"/>
+	<img src="/uploads/gallery/film-bw-5.jpg" alt="Լքուած տուն"/>
 </div>

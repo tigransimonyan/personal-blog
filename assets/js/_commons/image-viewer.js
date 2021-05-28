@@ -4,6 +4,7 @@ $(function () {
     new Viewer(elem, {
       movable: false,
       transition: false,
+      toggleOnDblclick: false,
     });
   }
 });

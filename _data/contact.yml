@@ -6,7 +6,7 @@
 
 - type: vsco
   icon: 'fas fa-image'
-  url: 'https://vsco.co/tigransimonyan'
+  url: '/gallery'
 - type: github
   icon: 'fab fa-github-alt'
   url: 'https://github.com/tigransimonyan'

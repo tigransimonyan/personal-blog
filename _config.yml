@@ -96,6 +96,13 @@ defaults:
       breadcrumb:
         - label: Գլխաւոր
           url: /
+  - scope:
+      path: gallery
+    values:
+      layout: gallery
+      breadcrumb:
+        - label: Գլխաւոր
+          url: /
 
 sass:
   sass_dir: /assets/css

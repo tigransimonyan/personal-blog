@@ -1,0 +1,49 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+
+{% if site.lang %} {% assign lang = site.lang | split: "_" | first %} {% else %} {% assign lang =
+'en' %} {% endif %} {% capture prefer_mode %} {% if site.theme_mode != "dual" %} mode="{{
+site.theme_mode }}" {% endif %} {% endcapture %}
+
+<html lang="{{ lang }}" {{ prefer_mode }}>
+{% include head.html %}
+
+<body>
+	<div class="container-fluid px-5">
+		<div class="py-5">
+			<a class="h2" href="{{site.url}}">
+				<strong>tigransimonyan.com</strong>
+			</a>
+			<h5 class="pt-3">{{page.title}}</h5>
+		</div>
+		<div class="row">
+			<div class="col-4">
+				<img class="w-100" src="/uploads/gallery/film-bw-3.jpg" alt="image" />
+				<img class="w-100" src="/uploads/gallery/film-bw-6.jpg" alt="image" />
+			</div>
+			<div class="col-4">
+				<img class="w-100" src="/uploads/gallery/film-bw-2.jpg" alt="image" />
+				<img class="w-100" src="/uploads/gallery/film-bw-7.jpg" alt="image" />
+				<img class="w-100" src="/uploads/gallery/film-bw-1.jpg" alt="image" />
+			</div>
+			<div class="col-4">
+				<img class="w-100" src="/uploads/gallery/film-bw-4.jpg" alt="image" />
+				<img class="w-100" src="/uploads/gallery/film-bw-5.jpg" alt="image" />
+				<img class="w-100" src="/uploads/gallery/film-bw-6.jpg" alt="image" />
+			</div>
+		</div>
+		<div class="py-4">
+			{% include footer.html %}
+		</div>
+	</div>
+	<style>
+		img {
+			margin-bottom: 30px;
+		}
+	</style>
+</body>
+
+</html>
