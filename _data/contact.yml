@@ -6,10 +6,10 @@
 
 - type: vsco
   icon: 'fas fa-image'
-  url: '/gallery'
+  url: 'https://gallery.tigransimonyan.com'
 - type: github
   icon: 'fab fa-github-alt'
-  url: 'https://gallery.tigransimonyan.com'
+  url: 'https://github.com/tigransimonyan'
 - type: twitter
   icon: 'fab fa-twitter'
   url: ''
