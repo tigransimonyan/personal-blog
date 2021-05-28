@@ -9,7 +9,7 @@
   url: '/gallery'
 - type: github
   icon: 'fab fa-github-alt'
-  url: 'https://github.com/tigransimonyan'
+  url: 'https://gallery.tigransimonyan.com'
 - type: twitter
   icon: 'fab fa-twitter'
   url: ''
