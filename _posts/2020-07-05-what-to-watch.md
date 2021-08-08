@@ -5,7 +5,9 @@ tags: [նայելիք]
 math: false
 ---
 
-## Ֆիլմեր
+Խորհուրդ կը տամ նայել՝
+
+#### **Ֆիլմեր**
 
 - Youth - 2015
 - The Truman Show - 1998
@@ -21,7 +23,7 @@ math: false
 - Scent of a Woman - 1992
 - Bruce Almighty - 2003
 
-## Սերիալներ
+#### **Սերիալներ**
 
 - The Young Pope - 2016
 - The New Pope - 2020
@@ -36,7 +38,7 @@ math: false
 - Sherlock - 2010
 - Fargo 1 - 2014
 
-## Մուլտֆիլմեր
+#### **Մուլտֆիլմեր**
 
 - Spirited Away - 2001
 - Howl's Moving Castle - 2004
