@@ -1,5 +1,5 @@
 $(function () {
-  var elem = document.getElementById('gallery');
+  var elem = document.getElementById('post-wrapper');
   if (elem && Viewer) {
     new Viewer(elem, {
       movable: false,
