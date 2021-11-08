@@ -18,3 +18,11 @@ title: Մասին
 - Լուսանկարչական ժապաւէն (35mm)
 - Ժապաւէնով աշխատող խցիկ
 - Սենեակային բոյսեր
+
+Այլ յղումներ՝
+
+- [@tigran@անքուն.հայ](https://անքուն.հայ/@tigran){:target="\_blank"}
+- [@tigran@օրագիր.հայ](https://օրագիր.հայ/tigran/){:target="\_blank"}
+- [@tigran@թութ.հայ](https://թութ.հայ/@tigran){:target="\_blank"}
+- [gallery.tigransimonyan.com](https://gallery.tigransimonyan.com/){:target="\_blank"}
+- [medium.com/@tigransimonyan](https://medium.com/@tigransimonyan){:target="\_blank"}
