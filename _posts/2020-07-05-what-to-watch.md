@@ -22,6 +22,7 @@ math: false
 - A Beautiful Mind - 2001
 - Scent of a Woman - 1992
 - Bruce Almighty - 2003
+- Chungking Express - 1994
 
 #### **Սերիալներ**
 
