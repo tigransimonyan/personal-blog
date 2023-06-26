@@ -22,8 +22,8 @@ layout: null
         <description>{{ post.content | xml_escape }}</description>
         <pubDate>{{ post.date | date_to_xmlschema }}</pubDate>
         <guid isPermaLink="true">{{ post_absolute_url }}</guid>
-        {% if post.categories %}
-          {% for category in post.categories %}
+        {% if post.tags %}
+          {% for category in post.tags %}
            <category>{{ category | xml_escape }}</category>
           {% endfor %}
         {% endif %}

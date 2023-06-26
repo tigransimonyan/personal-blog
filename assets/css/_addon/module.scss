@@ -20,8 +20,8 @@
 }
 
 %link-hover {
-  color: #d2603a !important;
-  border-bottom: 1px solid #d2603a;
+  color: #444 !important;
+  border-bottom: 1px solid #444;
   text-decoration: none;
 }
 
@@ -40,6 +40,7 @@
 %heading {
   font-weight: 400;
   font-family: 'Arm', sans-serif;
+  margin-bottom: 1rem;
 }
 
 %section {

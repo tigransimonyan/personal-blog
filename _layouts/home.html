@@ -1,10 +1,5 @@
 ---
 layout: page
-# The Home page layout
-# v2.0
-# https://github.com/cotes2020/jekyll-theme-chirpy
-# © 2017-2019 Cotes Chung
-# MIT Licensed
 ---
 
 <div id="post-list">
@@ -13,13 +8,6 @@ layout: page
     <h1>
       <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
     </h1>
-    <div class="post-content">
-      <p>
-        {% assign _content = post.content %} {% include no-linenos.html %} {{ _content | markdownify
-        | strip_html | truncate: 200 }}
-      </p>
-    </div>
-
     <div class="post-meta text-muted">
       <!-- posted date -->
       <i class="far fa-clock fa-fw"></i>
@@ -30,6 +18,11 @@ layout: page
       </span>
       <i class="fa fa-tag fa-fw"></i>
       <span>{{post.tags | join: ", "}}</span>
+    </div>
+    <div class="post-content">
+      <p>
+       {{ post.content }}
+      </p>
     </div>
   </div>
   <!-- .post-review -->

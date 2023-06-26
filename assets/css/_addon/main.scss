@@ -280,7 +280,7 @@ $sidebar-display: "sidebar-display";
   height: $topbar-height;
   position: fixed;
   top: 0;
-  left: 260px; /* same as sidebar width */
+  left: 0; /* same as sidebar width */
   right: 0;
   transition: top 0.2s ease-in-out;
   z-index: 50;
@@ -452,15 +452,9 @@ $sidebar-display: "sidebar-display";
   &:nth-child(1), &:nth-child(2) {
     margin-top: $topbar-height; /* same as the height of topbar */
   }
-  &:first-child {
-    /* 3rem for topbar, 6rem for footer */
-    min-height: calc(100vh - #{$topbar-height} - #{$footer-height} - #{$post-extend-min-height});
-  }
 }
 
 #post-wrapper {
-  min-height: calc(100vh - #{$topbar-height}
-    - #{$footer-height} - #{$post-extend-min-height})!important;
   .post-content {
     a:hover {
       @extend %link-hover;
@@ -475,18 +469,12 @@ $sidebar-display: "sidebar-display";
 }
 
 footer {
-  position: absolute;
-  bottom: 0;
-  padding: 0 1rem;
   height: $footer-height;
   font-size: 0.8rem;
   color: #7a7b7d;
   background-color: var(--footer-bg-color);
   >div.d-flex {
     line-height: 1.2rem;
-    width: 95%;
-    max-width: 1045px;
-    border-top: 1px solid var(--main-border-color);
     margin-bottom: 1rem;
   }
   a {
@@ -732,6 +720,10 @@ a {
 
 } // a
 
+#page {
+  margin-top: 3rem;
+}
+
 .post {
   h1 {
     margin-top: 3rem;
@@ -813,6 +805,7 @@ table {
 .post-meta {
   font-size: 0.85rem;
   word-spacing: 1px;
+  margin-top: 15px;
   a {
     @extend %link-color;
     @extend %link-underline;
@@ -827,7 +820,7 @@ table {
 
 .post-content {
   line-height: 1.8;
-  margin-top: 2rem;
+  margin-top: 1rem;
   overflow-wrap: break-word;
   word-wrap: break-word;
   a {
@@ -864,7 +857,7 @@ table {
     @extend %tag-hover;
     border-bottom: none;
     text-decoration: none;
-    color: #d2603a;
+    color: #444;
   }
 }
 
@@ -948,13 +941,7 @@ table {
 
   $footer-height: 6rem; // overwrite
 
-  #main>div.row:first-child>div:first-child {
-    min-height: calc(100vh - #{$topbar-height} - #{$footer-height});
-  }
-
   #post-wrapper {
-    min-height: calc(100vh - #{$topbar-height}
-      - #{$footer-height} - #{$post-extend-min-height}) !important;
     h1 {
       margin-top: 2.2rem;
       font-size: 1.55rem;
@@ -985,7 +972,6 @@ table {
     height: $footer-height;
     >div.d-flex {
       width: 100%;
-      padding: 1.5rem 0;
       margin-bottom: .3rem;
       flex-wrap: wrap;
       justify-content: left!important;
@@ -1049,13 +1035,6 @@ table {
 
   #search-result-wrapper {
     width: 100%;
-  }
-
-  #page h1.dynamic-title {
-    display: none;
-    ~.post-content {
-      margin-top: 3rem;
-    }
   }
 
   #breadcrumb,
@@ -1125,23 +1104,12 @@ table {
 }
 
 
-@media all and (min-width: 577px) and (max-width: 1199px) {
-  footer>.d-flex>div {
-    width: 312px;
-  }
-}
-
-
 /* Sidebar visible */
 @media all and (min-width: 831px) {
 
   /* Solved jumping scrollbar */
   html {
     overflow-y: scroll;
-  }
-
-  #main-wrapper {
-    margin-left: $sidebar-width-medium;
   }
 
   #profile-wrapper {
@@ -1167,20 +1135,6 @@ table {
     text-align: left;
   }
 
-  footer>div.d-flex {
-    width: 92%;
-  }
-
-}
-
-/* iPad 9.7" horizontal */
-@media all and (min-width: 992px) and (max-width: 1024px) {
-  #main-wrapper .col-lg-11 {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 96%;
-    flex: 0 0 96%;
-    max-width: 96%;
-  }
 }
 
 /* Compact icons in sidebar & TOC hidden */
@@ -1194,10 +1148,6 @@ table {
         @include ml-mr(.25rem);
       }
     }
-  }
-
-  #topbar-wrapper {
-    left: 210px;
   }
 
   #search-result-wrapper {
@@ -1216,10 +1166,6 @@ table {
   .site-subtitle {
     font-size: 90%;
     @include ml-mr(1rem);
-  }
-
-  #main-wrapper {
-    margin-left: 210px;
   }
 
   #breadcrumb {
@@ -1303,20 +1249,9 @@ table {
     font-size: 1.03rem;
   }
 
-  footer>div.d-felx {
-    width: 85%;
-  }
-
 }
 
 @media all and (min-width: 1400px) {
-
-  #main>div.row {
-    padding-left: calc((100% - #{$main-content-max-width}) / 2);
-    >div.col-xl-8 {
-      max-width: 850px;
-    }
-  }
 
   #search-result-wrapper {
     padding-right: 2rem;
@@ -1351,16 +1286,8 @@ table {
     }
   }
 
-  #main-wrapper {
-    margin-left: $sidebar-width-large;
-  }
-
   #panel-wrapper {
     margin-left: calc((100% - #{$main-content-max-width}) / 10);
-  }
-
-  #topbar-wrapper {
-    left: $sidebar-width-large;
   }
 
   #topbar {
@@ -1477,10 +1404,7 @@ table {
       }
     } // .sidebar-bottom
   } // #sidebar
-  footer>div.d-flex {
-    width: 87%;
-    max-width: 1140px;
-  }
+
 
   #search-result-wrapper {
     width: calc(100% - #{$sidebar-width-large});
@@ -1493,17 +1417,9 @@ table {
 
 
 @media all and (min-width: 1700px) {
-  #topbar-wrapper {
-    padding-right: calc(100% - #{$sidebar-width-large}
-     - (1920px - #{$sidebar-width-large}) ) /* 100% - 350px - (1920px - 350px); */
-  }
 
   #topbar {
     max-width: calc(#{$main-content-max-width} + 20px)
-  }
-
-  #main>div.row {
-    padding-left: calc((100% - #{$main-content-max-width} - 2%) / 2);
   }
 
   #panel-wrapper {
@@ -1512,7 +1428,6 @@ table {
 
   footer {
     padding-left: 0;
-    padding-right: calc(100% - #{$sidebar-width-large} - 1180px);
   }
 
   #back-to-top {
@@ -1522,9 +1437,6 @@ table {
 }
 
 @media (min-width: 1920px) {
-  #main>div.row {
-    padding-left: 190px;
-  }
 
   #search-result-wrapper {
     padding-right: calc(100% - #{$sidebar-width-large} - 1530px);

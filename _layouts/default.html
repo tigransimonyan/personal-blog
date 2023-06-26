@@ -1,10 +1,5 @@
 ---
 layout: compress
-# Default layout
-# v2.0
-# https://github.com/cotes2020/jekyll-theme-chirpy
-# © 2017-2019 Cotes Chung
-# MIT Licensed
 ---
 
 <!DOCTYPE html>
@@ -17,16 +12,24 @@ site.theme_mode }}" {% endif %} {% endcapture %}
 {% include head.html %}
 
 <body data-spy="scroll" data-target="#toc">
-  <div id="sidebar" class="d-flex flex-column">{% include sidebar.html %}</div>
-
-  {% include topbar.html %}
 
   <div id="main-wrapper">
     <div id="main">
-      {% capture _content %} {{ content }} {% endcapture %} {% include fixlinenos.html %} {{
-      _content }} {% include footer.html %}
+
+      <div class="row justify-content-center">
+
+        <div id="post-wrapper" class="col-12 col-lg-8 col-xl-6">
+
+          {% include main-nav.html %}
+
+          {% capture _content %}
+          {{ content }} {% endcapture %} {% include fixlinenos.html %} {{
+          _content }} {% include footer.html %}
+
+        </div> 
+      </div>
+
     </div>
-    {% include search-results.html %}
   </div>
   <!-- #main-wrapper -->
 
@@ -35,8 +38,6 @@ site.theme_mode }}" {% endif %} {% endcapture %}
   <a id="back-to-top" href="#" class="btn btn-lg btn-box-shadow" role="button">
     <i class="fas fa-angle-up"></i>
   </a>
-
-  {% include search-loader.html %}
 </body>
 
 </html>
