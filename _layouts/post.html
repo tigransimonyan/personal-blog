@@ -20,7 +20,7 @@ layout: default
         <div>
           Լոյս է տեսել
           <span class="timeago" data-toggle="tooltip" data-placement="bottom"
-           title="{{ page.date | date: site.data.date_format.tooltip }}">
+            title="{{ page.date | date: site.data.date_format.tooltip }}">
             {{ page.date | date: site.data.date_format.post }}
             <i class="unloaded">{{ page.date | date_to_xmlschema }}</i>
           </span>։
@@ -28,18 +28,19 @@ layout: default
 
         <!-- lastmod -->
         {%- capture filename -%}
-          {{ page.url | split: "/" | last }}
+        {{ page.url | split: "/" | last }}
         {%- endcapture -%}
 
       </div> <!-- .post-meta -->
 
       <div class="post-content">
         {% if page.image %}
-          <img src="{{ page.image }}">
+        <img src="{{ page.image }}">
         {% endif %}
         <!-- Using lozad. See: <https://github.com/ApoorvSaxena/lozad.js#usage> -->
         {% if content contains '<img src=' %}
-          {{ content | replace: '<img src=', '<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src=' }}
+          {{ content | replace: ' <img src=', ' <img
+          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src=' }}
         {% else %}
           {{ content }}
         {% endif %}
@@ -47,33 +48,22 @@ layout: default
 
       <div class="post-tail-wrapper text-muted">
 
-        <!-- categories -->
-        {% if page.categories.size > 0 %}
-        <div class="post-meta mb-3">
-          <i class="far fa-folder-open fa-fw mr-1"></i>
-          {% for category in page.categories %}
-            <a href='{{ site.baseurl }}/categories/{{ category | replace: ' ', '-' | downcase | url_encode }}/'>{{ category }}</a>
-            {%- unless forloop.last -%}, {%- endunless -%}
-          {% endfor %}
-        </div>
-        {% endif %}
+      <!-- tags -->
+      {% if page.tags.size > 0 %}
+      <div class="post-tags">
+        <i class="fa fa-tags fa-fw mr-1"></i>
+        {% for tag in page.tags %}
+        <a href="{{ site.baseurl }}/tags/{{ tag | replace: ' ', ' -' | downcase | url_encode }}/"
+          class="post-tag no-text-decoration">
+        {{- tag -}}
+        </a>
+        {% endfor %}
+      </div>
+      {% endif %}
 
-        <!-- tags -->
-        {% if page.tags.size > 0 %}
-        <div class="post-tags">
-          <i class="fa fa-tags fa-fw mr-1"></i>
-          {% for tag in page.tags %}
-          <a href="{{ site.baseurl }}/tags/{{ tag | replace: ' ', '-' | downcase | url_encode }}/"
-            class="post-tag no-text-decoration" >
-            {{- tag -}}
-          </a>
-          {% endfor %}
-          </div>
-        {% endif %}
-
-        <div class="post-tail-bottom
+      <div class="post-tail-bottom
           d-flex justify-content-between align-items-center pt-5 pb-2">
-          <!-- {% if site.data.rights.license %}
+        <!-- {% if site.data.rights.license %}
           <div class="license-wrapper">
             This post is licensed under
             <a href="{{ site.data.rights.license.link }}">{{ site.data.rights.license.name }}</a>
@@ -83,15 +73,15 @@ layout: default
 
           {% include post-sharing.html %} -->
 
-        </div><!-- .post-tail-bottom -->
+      </div><!-- .post-tail-bottom -->
 
-      </div><!-- div.post-tail -->
+    </div><!-- div.post-tail -->
 
-    </div> <!-- .post -->
+  </div> <!-- .post -->
 
-  </div> <!-- #post-wrapper -->
+</div> <!-- #post-wrapper -->
 
-  {% include panel.html %}
+{% include panel.html %}
 
 </div> <!-- .row -->
 
@@ -101,9 +91,9 @@ layout: default
     <div class="pl-1 pr-1 pl-sm-2 pr-sm-2 pl-md-4 pr-md-4">
 
       {% include post-nav.html %}
- 
+
       {% if page.comments %}
-        {% include foo-comments.html %}
+      {% include foo-comments.html %}
       {% endif %}
 
       {% include related-posts.html %}

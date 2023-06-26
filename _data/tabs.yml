@@ -6,10 +6,10 @@
 
 - name: Գլխաւոր
   icon: 'fas fa-home'
-- name: Բաժիններ
-  icon: 'fas fa-stream'
-  path: tabs
-  url: categories
+# - name: Բաժիններ
+#   icon: 'fas fa-stream'
+#   path: tabs
+#   url: categories
 - name: Պիտակներ
   icon: 'fas fa-tags'
   path: tabs
@@ -18,7 +18,7 @@
   path: tabs
   url: archives
   icon: 'fas fa-archive'
-- name: Մասին
-  icon: 'fas fa-info'
-  path: tabs
-  url: about
+# - name: Մասին
+#   icon: 'fas fa-info'
+#   path: tabs
+#   url: about
