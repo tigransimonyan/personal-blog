@@ -2,7 +2,6 @@
 title: JavaScript - 4. Oպերատորներ
 categories: [Տեխնիկական, JavaScript]
 tags: [ջաւասկրիպտ, ծրագրաւորում]
-math: false
 ---
 
 Օպերատորները լինում են երկու տեսակի՝
